@@ -86,7 +86,7 @@ article div {
     display: flex;
     flex-direction: column;
     margin-left: 30%;
-    margin-top: -141.5%;
+    margin-top: -141.6%;
     border: 3px solid black;
     width: 66%;
     margin-bottom: 16px;
@@ -147,5 +147,42 @@ footer a {
 
 footer a:hover {
     background-color: rgb(87, 76, 76);
-    transition: ease 0.8s;
+    transition: ease 1.5s;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        transition: 1.5s ease;
+        background-image: linear-gradient(#6f787c, #2c383c, #0c0e0f);
+    }
+    .container {
+        margin: 16px auto;
+    }
+    .experience,
+    .education,
+    .idioms,
+    .certificates,
+    footer {
+        flex-direction: column;
+        margin-top: 8%;
+        margin-left: 1%;
+        width: 395px;
+        text-align: justify;
+        margin: 16px auto;
+    }
+    img:hover {
+        margin-top: 12%;
+        transform: scale(1.5);
+        transition: 0.5s ease;
+    }
+    #title {
+        margin-top: 12%;
+    }
+    footer {
+        width: auto;
+        margin: 0%;
+    }
+    footer a {
+        margin-left: 1%;
+    }
 }
